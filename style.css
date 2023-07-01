@@ -1,0 +1,562 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*------------ HEADER SECTION --------------*/
+header {
+    width: 100%;
+    height: 100%;
+}
+
+header .nav {
+    background-color: #FFF5FD;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+header .nav img {
+    padding: 10px;
+    margin-left: 10px;
+    height: 60px;
+}
+
+header .nav .menu {
+    display: inline-block;
+    float: right;
+    position: relative;
+    padding: 15px 75px 15px 0;
+
+}
+
+header .nav .menu ul{
+    list-style: none;
+}
+
+header .nav .menu ul li {
+    display: inline-block;
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+header .nav .menu ul li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+header .nav .menu ul li a{
+    text-decoration: none;
+    color: black;
+
+}
+/*body {*/
+/*    background: linear-gradient(to top, #150b2f, #070411); !important;*/
+/*}*/
+
+/*------------ HOME SECTION --------------*/
+
+.home-section {
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    width: 100%;
+    //display: inline-block;
+    background: linear-gradient(to top, #150b2f, #070411);
+    padding-top: 70px;
+
+}
+.home-section .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    //position: relative;
+
+    padding: 0 150px;
+}
+
+.home-section .col-1 {
+    width: 35%;
+    margin-top: 70px;
+    /*margin-bottom: 70px;*/
+    display: block;
+}
+
+.home-section .col-1 img {
+    display: block;
+    width: 75%;
+    margin: auto;
+}
+
+.home-section .col-2{
+    width: 65%;
+    margin-top: 70px;
+}
+
+.home-section .col-2 .content {
+    width: 80%;
+}
+
+.home-section .col-2 .bigger {
+    font-size: 4.375rem;
+    margin-bottom: 10px;
+}
+.home-section .col-2 h3 {
+    font-size: 2.188rem;
+    margin-bottom: 10px;
+}
+
+
+.colored-text {
+    color: #91b3fa;
+    position: relative;
+}
+
+.home-section .col-2 .socials {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.home-section .col-2 .download-btn {
+    color: #1f232d;
+    padding: 10px;
+    background-color: #91b3fa;
+    box-shadow: 0 0 15px #6367ef;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.home-section .col-2 .download-btn:hover{
+    box-shadow: none;
+}
+
+
+/*------------ ABOUT ME SECTION --------------*/
+
+.about-me-section {
+    color: #1f232d;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    display: inline-block;
+}
+
+.about-me-section h1 {
+    margin-bottom: 10px;
+}
+
+
+.about-me-section .container {
+    padding: 0 100px;
+    margin-top: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.about-me-section .col-1 {
+    width: 50%;
+    /*float: left;*/
+    text-align: left;
+}
+
+.about-me-section .col-1 .content {
+    background-color: #dee6fd;
+    border-radius: 15px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.about-me-section .col-2 {
+    width: 50%;
+    /*float: right;*/
+    text-align: left;
+
+    height: auto;
+}
+.about-me-section .col-2 figure img {
+    //display: inline-block;
+    width: 100%;
+}
+
+/*------------ GALLERY SECTION --------------*/
+
+.gallery-section  {
+    background: linear-gradient(#150b2f, #070411);
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #fff;
+    text-align: center;
+}
+
+.gallery-section h1 {
+    margin-bottom: 10px;
+}
+
+.gallery-section .container {
+    margin-top: 80px;
+    padding: 0 35px;
+    column-count: 6;
+}
+
+.gallery-section .container .image-container {
+    margin-bottom: 15px;
+    position: relative;
+    /*background-color: black;*/
+    height: 99.5%;
+}
+
+
+.gallery-section .container figure .modal-target {
+    border-radius: 20px;
+    max-width: 100%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.gallery-section .container figure .modal-target:hover {
+    opacity: 0.3;
+}
+
+/*.overlay {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    width: 100%;*/
+/*    height: 99.4%;*/
+/*    background: rgba(0, 0, 0, 0.6);*/
+/*    border-radius: 20px;*/
+/*    cursor: pointer;*/
+/*    visibility: hidden;*/
+/*}*/
+
+/*.gallery-section .container .image-container:hover .overlay {*/
+/*    visibility: visible;*/
+/*}*/
+
+
+/* ===== IMAGE POP-UP ANIMATION BY W3SCHOOLS ===== */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+   height: 90%;
+    opacity: 1 !important;
+    max-width: 1200px;
+}
+
+/* Caption of Modal Image */
+.modal-caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    margin-top: 32px;
+}
+
+/* Add Animation */
+.modal-content, .modal-caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-atransform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*------------ PASSIONS SECTION --------------*/
+
+.passions-section {
+    color: #1f232d;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    //display: inline-block;
+}
+
+.passions-section h1 {
+    margin-bottom: 10px;
+}
+
+.passions-section .container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 90px;
+}
+
+.passions-section .container h3 {
+    text-transform: uppercase;
+}
+
+.passions-section .passion-item {
+    width: 450px;
+    height: 275px;
+    border: 1px solid #6367ef;
+    border-radius: 40px;
+    margin-top: 20px;
+    transition: 0.3s;
+    display: flex;
+    align-items: flex-end;
+    //justify-content: center;
+    box-shadow: 0 0 15px #6367ef;
+
+}
+
+.content-overlay {
+    border-bottom-left-radius: 38px;
+    border-bottom-right-radius: 38px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    color: white;
+    opacity: 0;
+    height: 20%;
+    transition: 0.2s;
+    //margin-bottom: -0.03em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.passions-section .passion-item .content-overlay a {
+    color: #91b3fa;
+}
+
+.passions-section .passion-item:hover .content-overlay{
+    opacity: 1;
+}
+.passions-section .passion-item:hover {
+    //box-shadow: none;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.passions-section #item-1 {
+    background-image: url("images/web.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.passions-section #item-2 {
+    background-image: url("images/edit.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.passions-section #item-3 {
+    background-image: url("images/program.png");
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*------------ CONTACTS SECTION --------------*/
+
+.contact-section  {
+    background: linear-gradient(to top, #150b2f, #070411);
+    width: 100%;
+    display: inline-block;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-section h1 {
+    margin-bottom: 10px;
+}
+
+.contact-section .container {
+    padding: 0 150px;
+    /*display: flex;*/
+    /*align-items: center;*/
+    width: 90%;
+    margin: 90px auto 0 auto;
+
+}
+
+
+.contact-section .col-1 {
+    width: 40%;
+    float: left;
+    text-align: left;
+    padding-top: 40px;
+}
+.contact-section .col-1 .row {
+    margin-bottom: 30px;
+}
+
+
+.contact-section .col-1 .contact-details h3, .contact-section .col-1 .contact-details h4{
+    text-transform: uppercase;
+    border-bottom: 2px dotted #7c7586;
+    padding-bottom: 10px;
+}
+
+.contact-section .col-1 .contact-details h3:before, .contact-section .col-1 .contact-details h4:before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    background-color: #2969f8;
+    clip-path: polygon(100% 0, 100% 62%, 62% 100%, 0 100%, 0 0);
+    margin-right: 10px;
+    position: relative;
+    top: -1px;
+}
+.contact-section .col-1 .contact-details p {
+    padding: 5px 0;
+}
+
+.contact-section .col-2 {
+    width: 60%;
+    float: right;
+    text-align: left;
+    padding-left: 40px;
+}
+
+
+.contact-section .col-2 form{
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    padding: 50px;
+    width: 100%;
+}
+
+.contact-section .col-2 .row1 .col textarea {
+    height: 80px;
+}
+
+.contact-section .col-2 .row2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-section .col-2 .row2 .inner-col-1, .contact-section .col-2 .row2 .inner-col-2 {
+    width: 49%;
+    display: inline-block;
+}
+
+.contact-section .col-2 .row2 .inner-col-2 {
+    float: right;
+}
+
+
+.contact-section form textarea, .contact-section form input, .contact-section form button {
+    width: 100%;
+    outline: none;
+    border: 0;
+    margin-bottom: 15px;
+    height: 45px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+.contact-section .col-2 form .labela {
+    display: block;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.contact-section .col-2 .row3 {
+    text-align: center;
+}
+
+.contact-section .col-2 .row3 button {
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 60%;
+    clip-path: polygon(100% 0, 100% 75%, 95% 100%, 0 100%, 0 0);
+    background: linear-gradient(to right, #3952f6, #5728f0);
+    color: #fff !important;
+    margin-bottom: 0;
+}
+
+/*------------ FOOTER SECTION --------------*/
+
+footer {
+    width: 100%;
+    height: 60px;
+    text-align: left;
+    background-color: #FFF5FD;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    /*position: fixed;*/
+    /*bottom: 0;*/
+}
+
+footer p {
+    display: inline-block;
+}
+footer .left-paragraph {
+    padding: 25px;
+}
+
+footer .right-paragraph {
+    float: right;
+    padding: 15px;
+}
