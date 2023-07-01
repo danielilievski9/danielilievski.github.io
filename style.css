@@ -60,17 +60,13 @@ header .nav .menu ul li a{
     color: black;
 
 }
-/*body {*/
-/*    background: linear-gradient(to top, #150b2f, #070411); !important;*/
-/*}*/
-
 /*------------ HOME SECTION --------------*/
 
 .home-section {
     font-family: 'Ubuntu', sans-serif;
     color: #fff;
     width: 100%;
-    //display: inline-block;
+    /*display: inline-block;*/
     background: linear-gradient(to top, #150b2f, #070411);
     padding-top: 70px;
 
@@ -79,8 +75,6 @@ header .nav .menu ul li a{
     height: 100%;
     display: flex;
     align-items: center;
-    //position: relative;
-
     padding: 0 150px;
 }
 
@@ -186,11 +180,10 @@ header .nav .menu ul li a{
     width: 50%;
     /*float: right;*/
     text-align: left;
-
     height: auto;
 }
 .about-me-section .col-2 figure img {
-    //display: inline-block;
+    /*display: inline-block;*/
     width: 100%;
 }
 
@@ -332,7 +325,7 @@ header .nav .menu ul li a{
     text-align: center;
     padding-top: 100px;
     padding-bottom: 100px;
-    //display: inline-block;
+    /*display: inline-block;*/
 }
 
 .passions-section h1 {
@@ -373,7 +366,7 @@ header .nav .menu ul li a{
     opacity: 0;
     height: 20%;
     transition: 0.2s;
-    //margin-bottom: -0.03em;
+    /*margin-bottom: -0.03em;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -433,7 +426,6 @@ header .nav .menu ul li a{
     /*align-items: center;*/
     width: 90%;
     margin: 90px auto 0 auto;
-
 }
 
 
