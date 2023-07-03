@@ -1,7 +1,7 @@
 /* ===== HOME SECTION TYPING ANIMATION ===== */
 
 var typed = new Typed('.auto-input', {
-    strings: ['student at FINKI.', "Front-End Developer.", "Video Editor."],
+    strings: ['student at FINKI.', "video editor."],
     typeSpeed: 70,
     backSpeed: 60,
     backDelay: 2000,
@@ -11,20 +11,19 @@ var typed = new Typed('.auto-input', {
 
 /* ===== GALLERY SECTION IMAGE POP-UP ANIMATION ===== */
 
-var modal = document.getElementById('modal');
+var popUp = document.getElementById('pop-up');
 
-var modalClose = document.getElementById('modal-close');
-modalClose.addEventListener('click', function() {
-    modal.style.display = "none";
+var closeBtn = document.getElementById('close-btn');
+closeBtn.addEventListener('click', function() {
+    popUp.style.display = "none";
 });
 
 document.addEventListener('click', function (e) {
-    if (e.target.className.indexOf('modal-target') !== -1) {
+    if (e.target.className.indexOf('image') !== -1) {
         var img = e.target;
-        var modalImg = document.getElementById("modal-content");
-        var captionText = document.getElementById("modal-caption");
-        modal.style.display = "block";
+        var modalImg = document.getElementById("image-content");
+        popUp.style.display = "block";
         modalImg.src = img.src;
-        captionText.innerHTML = img.alt;
+
     }
 });

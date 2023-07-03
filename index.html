@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Daniel Ilievski</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -81,90 +83,89 @@
     <p><i>gallery (latin: galeria) - unforgettable memories.</i></p>
     <div class="container">
         <figure class="image-container">
-            <img class="modal-target" src="images/gallery/image-1.png" alt="">
+            <img class="image" src="images/gallery/image-1.png" alt="">
             <div class="overlay"></div>
         </figure>
         <figure class="image-container">
-            <img class="modal-target" src="images/gallery/image-2.jpg" alt="">
+            <img class="image" src="images/gallery/image-2.jpg" alt="">
             <div class="overlay"></div>
 
         </figure>
         <figure class="image-container">
-            <img class="modal-target" src="images/gallery/image-3.jpg" alt="" >
+            <img class="image" src="images/gallery/image-3.jpg" alt="" >
             <div class="overlay"></div>
         </figure>
         <figure class="image-container">
-            <img class="modal-target" src="images/gallery/image-4.jpg" alt="" >
+            <img class="image" src="images/gallery/image-4.jpg" alt="" >
             <div class="overlay"></div>
         </figure>
         <figure class="image-container">
-            <img class="modal-target" src="images/gallery/20211224_235749.jpg" alt="">
+            <img class="image" src="images/gallery/20211224_235749.jpg" alt="">
             <div class="overlay"></div>
         </figure>
         <figure class="image-container">
-            <img class="modal-target" src="images/gallery/image-5.1.jpg" alt="">
+            <img class="image" src="images/gallery/image-5.1.jpg" alt="">
             <div class="overlay"></div>
         </figure >
         <figure class="image-container">
-            <img class="modal-target" src="images/gallery/image-6.jpg" alt="">
+            <img class="image" src="images/gallery/image-6.jpg" alt="">
             <div class="overlay"></div>
         </figure>
         <figure class="image-container">
-            <img class="modal-target" src="images/gallery/image-7.jpg" alt="">
+            <img class="image" src="images/gallery/image-7.jpg" alt="">
             <div class="overlay"></div>
         </figure>
         <figure class="image-container">
-            <img class="modal-target" src="images/gallery/image-8.png" alt="">
+            <img class="image" src="images/gallery/image-8.png" alt="">
             <div class="overlay"></div>
         </figure>
         <figure class="image-container">
-            <img class="modal-target" src="images/gallery/image-13.webp" alt="">
+            <img class="image" src="images/gallery/image-13.webp" alt="">
             <div class="overlay"></div>
         </figure>
         <figure class="image-container">
-            <img class="modal-target" src="images/gallery/image-9.jpeg" alt="">
+            <img class="image" src="images/gallery/image-9.jpeg" alt="">
             <div class="overlay"></div>
         </figure >
         <figure class="image-container">
-            <img class="modal-target" src="images/gallery/image-10.jpg" alt="">
+            <img class="image" src="images/gallery/image-10.jpg" alt="">
             <div class="overlay"></div>
         </figure>
         <figure class="image-container">
-            <img class="modal-target" src="images/gallery/image-11.jpg" alt="">
+            <img class="image" src="images/gallery/image-11.jpg" alt="">
             <div class="overlay"></div>
         </figure>
         <figure class="image-container">
-            <img class="modal-target" src="images/gallery/image-12.jpg" alt="">
+            <img class="image" src="images/gallery/image-12.jpg" alt="">
             <div class="overlay"></div>
         </figure>
 
         <figure class="image-container">
-            <img class="modal-target" src="images/gallery/image-14.jpg" alt="">
+            <img class="image" src="images/gallery/image-14.jpg" alt="">
             <div class="overlay"></div>
         </figure>
 
         <figure class="image-container">
-            <img class="modal-target" src="images/gallery/image-15.jpg" alt="">
+            <img class="image" src="images/gallery/image-15.jpg" alt="">
             <div class="overlay"></div>
         </figure>
         <figure class="image-container">
-            <img class="modal-target" src="images/gallery/image-16.jpg" alt="">
+            <img class="image" src="images/gallery/image-16.jpg" alt="">
             <div class="overlay"></div>
         </figure>
         <figure class="image-container">
-            <img class="modal-target"src="images/gallery/image-17.jpg" alt="">
+            <img class="image"src="images/gallery/image-17.jpg" alt="">
             <div class="overlay"></div>
         </figure>
 
         <figure class="image-container">
-            <img class="modal-target" src="images/gallery/image-18.jpg" alt="">
+            <img class="image" src="images/gallery/image-18.jpg" alt="">
             <div class="overlay"></div>
         </figure>
 
-        <div id="modal" class="modal">
-            <span id="modal-close" class="modal-close">&times;</span>
-            <img id="modal-content" class="modal-content">
-            <div id="modal-caption" class="modal-caption"></div>
+        <div id="pop-up" class="pop-up">
+            <span id="close-btn" class="close-btn">&times;</span>
+            <img id="image-content" class="image-content">
         </div>
     </div>
 </div>
@@ -196,7 +197,7 @@
             <h3>C++ Programming</h3>
             <div id="item-3" class="passion-item">
                 <div class="content-overlay">
-                    <p>Find my C++ solution exercises <span class="colored-text">to be added</span>.</p>
+                    <p>Find my C++ solution exercises <span class="colored-text">here</span>.</p>
                 </div>
             </div>
         </div>
@@ -239,11 +240,11 @@
                 <div class="row2">
                     <div class="inner-col-1">
                         <label class="labela" for="name">Your Name (Required)</label>
-                        <input id="name" type="text">
+                        <input id="name" type="text" required>
                     </div>
                     <div class="inner-col-2">
                         <label class="labela" for="email">Your Email (Required)</label>
-                        <input id="email" type="text">
+                        <input id="email" type="text" required>
                     </div>
                 </div>
 
@@ -258,8 +259,9 @@
 
 <footer>
     <p class="left-paragraph">This web site was built with pure passion and a 4-month university experience at web development. Unfortunately, it isn't fully responsive yet.</p>
-    <p class="right-paragraph">Powered by: Daniel Ilievski <br> Created on: 28th June, 2023</p>
+    <p class="right-paragraph">Made by: Daniel Ilievski <br> Created on: 28th June, 2023</p>
 </footer>
+<!--HOME SCREEN TYPING ANIMATION-->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="script.js"></script>
 </body>
